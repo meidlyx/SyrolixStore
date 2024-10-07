@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Action;
+    src: url(/styles/font-stiles/A.Action\ Jackson.Alen_.Rus_.ttf);
+}
+
+@font-face {
+    font-family: Cyberpunk;
+    src: url(/styles/font-stiles/Cyberpunk_RUS_BY_LYAJKA.ttf);
+}
+
+@font-face {
+    font-family: Leto;
+    src: url(/styles/font-stiles/Leto\ Text\ Sans\ Defect.otf);
+}
+
+@font-face {
+    font-family: RubikMonoOne;
+    src: url(/styles/font-stiles/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: TS;
+    src: url(/styles/font-stiles/TS\ Block\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Worship;
+    src: url(/styles/font-stiles/Worship\ Music.ttf);
+}

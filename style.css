@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+} */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-500px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 5%;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: TS;
+    color: black;
+    transition: ease-in 0.5s;
+}
+
+.logo:hover {
+    color: orange;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    padding: 15px;
+    color: black;
+    font-size: 25px;
+    font-family: Leto;
+    display: block;
+    transition: ease-in-out 0.5s;
+}
+
+header nav ul li a:hover {
+    color: orange;
+}
+
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 180px;
+    background-color: white;
+    display: none; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* END HEADER */
+
+/* BODY */
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+/* END BODY */
+
+/* MAIN */
+
+span {
+    color: orange;
+}
+
+.collection {
+    margin-bottom: 250px;
+    animation: appear linear; /* анимка */
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+.name-collection {
+    font-family: RubikMonoOne;
+    color: gray;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.combo-clothes {
+    display: flex;
+    flex-direction: row;
+}
+.combo-clothes1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.clothes {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 350px;
+}
+.clothes1 {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 500px;
+}
+.name-clothes {
+    font-family: RubikMonoOne;
+    color: black;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 20px;
+    min-height: 120px;
+}
+.price-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Leto;
+    margin-top: 80px;
+    font-size: 30px;
+}
+.price {
+    font-weight: 900;
+    margin-top: 10px;
+}
+.button-buy {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    transition: ease-in-out 0.5s;
+}
+.button-buy:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+/* END FOOTER */

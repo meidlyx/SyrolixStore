@@ -1,0 +1,58 @@
+@media screen and (max-width: 900px) {
+    header {
+        width: 100%;
+    }
+    .logo {
+        font-size: 25px;
+        align-items: center;
+    }
+    nav {
+        display: none;
+    }
+    .collection {
+        width: 300px;
+        animation: none;
+    }
+    .clothes {
+        display: flex;
+        width: 300px;
+        flex-wrap: wrap;
+        animation: appear linear; /* анимка */
+        animation-timeline: view();
+        animation-range: entry 0 cover 20%;
+    }
+    .clothes1 {
+        animation: appear linear; /* анимка */
+        animation-timeline: view();
+        animation-range: entry 0 cover 30%;
+        width: 300px;
+    }
+    .clothes img {
+        width: 300px;
+        height: 300px;
+    }
+    .clothes1 img {
+        width: 300px;
+        height: 150px;
+    }
+    .name-collection {
+        font-size: 20px;
+    }
+    span {
+        color: red;
+    }
+    .combo-clothes {
+        flex-direction: column;
+    }
+    .combo-clothes1 {
+        flex-direction: column;
+    }
+    .price-buy {
+        font-size: 16px;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    .price {
+        margin: 10px;
+    }
+}
