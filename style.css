@@ -186,6 +186,9 @@ span {
     margin-right: 50px;
     width: 350px;
 }
+.clothes:hover {
+    background-color: #ededed;
+}
 .clothes1 {
     margin-top: 50px;
     margin-right: 50px;
